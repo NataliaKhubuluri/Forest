@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Natalia';
+    src: url('../fonts/bpg_nino_mtavruli_bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+h1 {
+    height: 128px;
+    font: normal 40px/128px Natalia;
+    text-align: center;
+}
+#leafs {
+    width: 100%;
+    height: 512px;
+    padding: 128px 0;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+img {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    z-index: 0;
+    transition: all .5s ease-in-out;
+}
+img:hover {
+    margin: -128px;
+    width: 512px;
+    height: 512px;
+    z-index: 1;
+}
